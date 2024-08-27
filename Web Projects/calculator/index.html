@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>moses</title>
+  <link rel="stylesheet" href="./styles/my.css">
+</head>
+
+<body>
+  <form class="calculator">
+    <div>
+      <h1>Calculator App</h1>
+    </div>
+    <div id="input"><input id="result" type="text" disabled></div>
+
+    
+    <div class="btns">
+
+      <div class="item1">
+        <button id="clean" onclick="clearScreen()">C</button>
+        <button id="delet" onclick="backSpace()">D</button>
+        <button id="exit" onclick="appendCharacter('.')">E</button>
+        <button id="plus" onclick="appendCharacter('+')">+</button>
+      </div>
+      <div class="item2">
+        <input type="button" id="num1" onclick="appendCharacter('7')" value="7"7>
+        <button id="num2" onclick="appendCharacter('8')">8</button>
+        <button id="num3" onclick="appendCharacter('9')">9</button>
+        <button id="minus" onclick="appendCharacter('-')">-</button>
+      </div>
+      <div class="item3">
+        <button id="num4" onclick="appendCharacter('4')">4</button>
+        <button id="num5" onclick="appendCharacter('5')">5</button>
+        <button id="num6" onclick="appendCharacter('6')">6</button>
+        <button id="times" onclick="appendCharacter('*')">*</button>
+      </div>
+      <div class="item4">
+        <button id="num7" onclick="appendCharacter('1')">1</button>
+        <button id="num8" onclick="appendCharacter('2')">2</button>
+        <button id="num9" onclick="appendCharacter('3')">3</button>
+        <button id="devid" onclick="appendCharacter('/')">/</button>
+      </div>
+      <div class="item5">
+        <button id="num0" onclick="appendCharacter('0')">0</button>
+        <button id="enter" onclick="calculateResult()">enter</button>
+        <button id="point" onclick="appendCharacter(',')">#</button>
+        <button id="point" onclick="appendCharacter('%')">%</button>
+      </div>
+    </div>
+  </form>
+  <script src="myApp.js"></script>
+</body>
+
+</html>
